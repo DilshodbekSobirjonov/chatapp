@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data:">
+    <title>Real Time Messaging</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Real Time Messaging</h1>
+        <div id="chat-container">
+            <div class="message">
+                <id id="messages"></id>
+            </div>
+            <div class="input-container">
+                <input type="text" id="userName" placeholder="Enter your name" class="user-input" />
+                <input type="text" id="messageBox" placeholder="Type your message here" class="user-input" />
+                <button id="send" title="Send Message!" class="send-button">Send Message</button>
+                <input type="file" id="imageInput" accept="image/*">
+                <button id="sendImage" title="Send Image">Send Image</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
